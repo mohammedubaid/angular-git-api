@@ -10,7 +10,8 @@ angular.module('Details')
         service.getUserInfo = function (name, callback) {
             
            $http({method:'GET', url: 'https://api.github.com/users/'+ name, headers: { 
-               'Authorization': 'token 8897b38e5d8141f4e796743d7ccf4a9fd4f65ecb',
+               //repalce TOKEN with your OAuth Token
+               'Authorization': 'token TOKEN',
                'Accept': 'application/json'
             }}).
                 then(function(response) {
