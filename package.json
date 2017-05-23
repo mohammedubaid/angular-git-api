@@ -1,0 +1,14 @@
+{
+  "name": "angular-git-search",
+  "version": "1.0.0",
+  "dependencies": {},
+  "engines": {
+    "node": "7.2.0",
+    "npm": "3.10.9"
+  },
+  "respository": "angular-git-search",
+  "author": "mohammedubaid",
+  "devDependencies": {
+    "express": "^4.15.3"
+  }
+}

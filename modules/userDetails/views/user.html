@@ -1,0 +1,26 @@
+<div class="clearfix">
+    <div class="side-bar col-sm-3">
+        <div class="profile-details">
+            <img src="http://www.math.sc.chula.ac.th/wp-content/uploads/2015/05/default-avatar_man.png" />
+            <p class="user-name">Mohammed Ubaid</p>
+            <p class="user-email">mohammedubaidc@gmail.com</p>
+            <p class="user-phone">+91-8904076039</p>
+             <a ng-href="#/login" class="user-logout">Logout</a>
+        </div>
+    </div>
+    <div class="back-btn">
+        <a href="#/">GO BACK</a>
+    </div>
+    <div class="search-block col-sm-9 pull-right">
+        <div class="user-details-block text-center">
+            <div class="git-user-details" ng-if="userObj">
+                <img ng-src={{userObj.avatar_url}}>
+                <p class="user-name">{{userObj.name}}</p>
+                <p class="user-details-text">{{userObj.bio}}</p>
+                <p class="user-details-text">{{userObj.email}}</p>
+                <p class="user-details-text">{{userObj.company}}</p>
+                <a ng-href="{{userObj.html_url}}" class="user-details-text">{{userObj.html_url}}</p>
+            </div>
+        </div>
+    </div>
+</div>

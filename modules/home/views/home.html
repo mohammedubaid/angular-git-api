@@ -1,0 +1,29 @@
+<div class="clearfix">
+    <div class="side-bar col-sm-3">
+        <div class="profile-details">
+            <img src="http://www.math.sc.chula.ac.th/wp-content/uploads/2015/05/default-avatar_man.png" />
+            <p class="user-name">Mohammed Ubaid</p>
+            <p class="user-email">mohammedubaidc@gmail.com</p>
+            <p class="user-phone">+91-8904076039</p>
+            <a ng-href="#/login" class="user-logout">Logout</a>
+        </div>
+    </div>
+    <div class="search-block col-sm-9 pull-right">
+        <div class="search-bar">
+            <input id="search-input" placeholder="Search Git Users" ng-model="searchInput"/>
+        </div>
+        <ul class="search-list-group clearfix" id="search-list" ng-if="users.length > 0">
+            <li class="search-list-item col-xs-6 col-sm-4 col-md-2" ng-repeat="user in users">
+                <a ng-href="#/user/{{user.login}}">
+                    <div class="video-list media">
+                        <div class="details-block"><img class="media-object" ng-src={{user.avatar_url}} />
+                            <div class="media-body">
+                                <p class="media-heading">{{user.login}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

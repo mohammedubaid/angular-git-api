@@ -1,0 +1,24 @@
+<div class="login-template clearfix">
+	<div class="login-form">
+		<h1 class="form-header">Login</h1>
+		<form class="form-horizontal" id="login-form" name="userLoginForm" ng-submit="login()" role="form">
+			<fieldset>
+				<div class="form-group login-input label-floating">
+                    <label class="control-label" for="inputEmail">Email</label>
+                    <i class="fa fa-key"></i>
+                    <input type="email" name="email" class="form-control" ng-model="email" required id="inputEmail"/>
+                    <span ng-show="form.email.$dirty && form.email.$error.required" class="help-block">Username is required</span>
+				</div>
+				<div class="form-group login-input label-floating">
+                     <label class="control-label" for="inputPassword">Password</label>
+                    <i class="fa fa-lock"></i>
+                    <input type="password" name="password" id="inputPassword" class="form-control" ng-model="password" required />
+                    <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
+				</div>
+				<div class="submit-form">
+					<button type="submit"  ng-disabled="form.$invalid || dataLoading"  class="btn btn-raised btn-success" id="submit-button">Login</button>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</div>
